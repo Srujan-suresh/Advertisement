@@ -315,9 +315,9 @@
                      <h4 class="tp-price-2-rate pb-30">₹425</h4>
                      <div class="tp-price-2-list pb-35">
                         <ul>
-                           <li>Kannada</li>
-                          <li>Above is the Cost/10 Sec</li> 
-                                                      <li>18% GST Applicable</li>
+                           <li style="color: #000;">Kannada</li>
+                          <li style="color: #000;">Above is the Cost/10 Sec</li> 
+                                                      <li style="color: #000;">18% GST Applicable</li>
 
                         </ul>
                      </div>
@@ -361,10 +361,10 @@
                      <h4 class="tp-price-2-rate pb-30">₹400</h4>
                      <div class="tp-price-2-list pb-35">
                         <ul>
-                           <li>Kannada</li>
-                                                     <li>Above is the Cost/10 Sec</li> 
+                           <li style="color: #000;">Kannada</li>
+                                                     <li style="color: #000;">Above is the Cost/10 Sec</li> 
 
-                                                   <li>18% GST Applicable</li>
+                                                   <li style="color: #000;">18% GST Applicable</li>
 
                         </ul>
                      </div>
@@ -382,10 +382,10 @@
                      <h4 class="tp-price-2-rate pb-30">₹450</h4>
                      <div class="tp-price-2-list pb-35">
                         <ul>
-                           <li>Hindi</li>
-                                                     <li>Above is the Cost/10 Sec</li> 
+                           <li style="color: #000;">Hindi</li>
+                                                     <li style="color: #000;">Above is the Cost/10 Sec</li> 
 
-                                                      <li>18% GST Applicable</li>
+                                                      <li style="color: #000;">18% GST Applicable</li>
 
                         </ul>
                      </div>
@@ -429,10 +429,10 @@
                      <h4 class="tp-price-2-rate pb-30">₹380</h4>
                      <div class="tp-price-2-list pb-35">
                         <ul>
-                           <li>Hindi</li>
-                                                     <li>Above is the Cost/10 Sec</li> 
+                           <li style="color: #000;">Hindi</li>
+                                                     <li style="color: #000;">Above is the Cost/10 Sec</li> 
 
-                                                   <li>18% GST Applicable</li>
+                                                   <li style="color: #000;">18% GST Applicable</li>
 
                         </ul>
                      </div>
@@ -450,10 +450,10 @@
                      <h4 class="tp-price-2-rate pb-30">₹290</h4>
                      <div class="tp-price-2-list pb-35">
                         <ul>
-                           <li>English</li>
-                                                     <li>Above is the Cost/10 Sec</li> 
+                           <li style="color: #000;">English</li>
+                                                     <li style="color: #000;">Above is the Cost/10 Sec</li> 
 
-                                                      <li>18% GST Applicable</li>
+                                                      <li style="color: #000;">18% GST Applicable</li>
 
                         </ul>
                      </div>
@@ -476,7 +476,7 @@
                      <h4 class="tp-price-2-rate pb-30">₹350</h4>
                      <div class="tp-price-2-list pb-35">
                         <ul>
-                           <li>English</li>
+                           <li >English</li>
                                                      <li>Above is the Cost/10 Sec</li> 
 
                            <li>18% GST Applicable</li>
@@ -492,6 +492,149 @@
          </div>
       </div>
       <!-- price area end -->
+
+
+
+      
+      <!-- Pop-Up Form Button -->
+<button id="openPopupBtn" class="popup-btn"></button>
+
+<!-- Pop-Up Form Modal -->
+<!-- Auto Pop-Up Form Modal -->
+<div id="popupForm" class="popup-form-container">
+    <div class="popup-form-content">
+        <button id="closePopupBtn" class="close-popup-btn">&times;</button>
+        <h3 class="popup-title">Get in Touch</h3>
+
+        <form id="popupFormSubmit">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label>Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<style>/* Basic pop-up styles */
+/* Popup Background */
+.popup-form-container {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+/* Popup Box */
+.popup-form-content {
+    background: #ffffff;
+    padding: 30px 40px;
+    width: 450px; /* Bigger Width */
+    border-radius: 10px;
+    position: relative;
+    animation: fadeDown 0.4s ease;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* X Close Button */
+.close-popup-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.popup-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004dad;
+}
+
+/* Inputs */
+.popup-form-content input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #004dad;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #003c8f;
+}
+
+</style>
+
+<script>// Get references to the modal and buttons
+// Select elements
+const popupForm = document.getElementById('popupForm');
+const closePopupBtn = document.getElementById('closePopupBtn');
+const form = document.getElementById('popupFormSubmit');
+
+// Auto Open Popup When Page Loads
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        popupForm.style.display = "flex";
+    }, 700); // delay for smooth loading (optional)
+});
+
+// Close Button
+closePopupBtn.addEventListener('click', () => {
+    popupForm.style.display = "none";
+});
+
+// Form Submit → Reload Page
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // collect values if needed (you may send to backend)
+    const info = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value
+    };
+    console.log(info);
+
+    // Reload page after submit
+    window.location.reload();
+});
+
+</script>
 
       <!-- brand area start -->
       <!-- <div class="tp-brand-area pb-120">

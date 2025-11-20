@@ -300,6 +300,148 @@
       </div>
       <!-- breadcrumb area end -->
 
+
+      
+      <!-- Pop-Up Form Button -->
+<button id="openPopupBtn" class="popup-btn"></button>
+
+<!-- Pop-Up Form Modal -->
+<!-- Auto Pop-Up Form Modal -->
+<div id="popupForm" class="popup-form-container">
+    <div class="popup-form-content">
+        <button id="closePopupBtn" class="close-popup-btn">&times;</button>
+        <h3 class="popup-title">Get in Touch</h3>
+
+        <form id="popupFormSubmit">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label>Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<style>/* Basic pop-up styles */
+/* Popup Background */
+.popup-form-container {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+/* Popup Box */
+.popup-form-content {
+    background: #ffffff;
+    padding: 30px 40px;
+    width: 450px; /* Bigger Width */
+    border-radius: 10px;
+    position: relative;
+    animation: fadeDown 0.4s ease;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* X Close Button */
+.close-popup-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.popup-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004dad;
+}
+
+/* Inputs */
+.popup-form-content input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #004dad;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #003c8f;
+}
+
+</style>
+
+<script>// Get references to the modal and buttons
+// Select elements
+const popupForm = document.getElementById('popupForm');
+const closePopupBtn = document.getElementById('closePopupBtn');
+const form = document.getElementById('popupFormSubmit');
+
+// Auto Open Popup When Page Loads
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        popupForm.style.display = "flex";
+    }, 700); // delay for smooth loading (optional)
+});
+
+// Close Button
+closePopupBtn.addEventListener('click', () => {
+    popupForm.style.display = "none";
+});
+
+// Form Submit → Reload Page
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // collect values if needed (you may send to backend)
+    const info = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value
+    };
+    console.log(info);
+
+    // Reload page after submit
+    window.location.reload();
+});
+
+</script>
+
       <!-- feature area start -->
       <div class="tp-feature-2-area tp-feature-2-bg p-relative fix pt-80 pb-80" data-background="assets/img/feature/bg.jpg">
          <div class="tp-feature-2-shape-1">
@@ -420,7 +562,7 @@
         </div>
         <div class="col-xl-5 col-lg-6">
           <div class="tp-feature-3-top">
-            <p>At The Blu Sapphire, we combine creativity, ethics, and innovation to deliver impactful advertising 
+            <p style="color: #000;">At The Blu Sapphire, we combine creativity, ethics, and innovation to deliver impactful advertising 
               and event solutions. Our mission is to help brands connect, engage, and grow through meaningful experiences.</p>
           </div>
         </div>
@@ -436,7 +578,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Comprehensive Advertising</h5>
-              <p>From radio to digital — we create and execute impactful multi-channel campaigns.</p>
+              <p style="color: #000;">From radio to digital — we create and execute impactful multi-channel campaigns.</p>
             </div>
           </div>
 
@@ -446,7 +588,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Creative Event Solutions</h5>
-              <p>Corporate launches, concerts, and mall activations — planned to perfection.</p>
+              <p style="color: #000;">Corporate launches, concerts, and mall activations — planned to perfection.</p>
             </div>
           </div>
 
@@ -456,7 +598,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Seamless Execution</h5>
-              <p>From décor to drone shots — we deliver flawless, end-to-end event execution.</p>
+              <p style="color: #000;">From décor to drone shots — we deliver flawless, end-to-end event execution.</p>
             </div>
           </div>
 
@@ -466,7 +608,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Trusted by Leading Brands</h5>
-              <p>12+ years of ethical, result-driven campaigns across industries.</p>
+              <p style="color: #000;">12+ years of ethical, result-driven campaigns across industries.</p>
             </div>
           </div>
         </div>
@@ -485,7 +627,7 @@
         <div class="tp-section-title-box mb-70">
           <span class="tp-section-subtitle" style="color: #004dad;">What We Do</span>
           <h4 class="tp-section-title">Our Core Services</h4>
-          <p>From creative campaigns to large-scale events — The Blu Sapphire delivers end-to-end brand solutions with innovation, precision, and passion.</p>
+          <p style="color: #000;">From creative campaigns to large-scale events — The Blu Sapphire delivers end-to-end brand solutions with innovation, precision, and passion.</p>
         </div>
       </div>
     </div>
@@ -498,7 +640,7 @@
           <img src="assets/newimg/amaizing-setting-tableware-appliances-some-romantic-place-min.jpg" alt="Event Management" style="width:100%; height:200px; object-fit:cover;">
           <div style="padding:30px;">
             <h5 class="tp-feature-title" style="color:#000;">Event Management</h5>
-            <p style="color:#333; text-align:justify;">Corporate events, product launches, dealer meets, and social celebrations executed flawlessly from concept to completion with expert coordination and creativity.</p>
+            <p style="color:#000; text-align:justify;">Corporate events, product launches, dealer meets, and social celebrations executed flawlessly from concept to completion with expert coordination and creativity.</p>
           </div>
         </div>
       </div>
@@ -509,7 +651,7 @@
           <img src="assets/newimg/high-angle-man-holding-camera-min.jpg" alt="Creative Media" style="width:100%; height:200px; object-fit:cover;">
           <div style="padding:30px;">
             <h5 class="tp-feature-title" style="color:#000;">Creative Media & Production</h5>
-            <p style="color:#333; text-align:justify;">TVCs, digital films, animation, and post-production bringing brand stories to life through compelling visuals, seamless editing, and emotional impact.</p>
+            <p style="color:#000; text-align:justify;">TVCs, digital films, animation, and post-production bringing brand stories to life through compelling visuals, seamless editing, and emotional impact.</p>
           </div>
         </div>
       </div>
@@ -520,7 +662,7 @@
           <img src="assets/newimg/online-marketing-branding-concept-laptop-screen-min.jpg" alt="Branding & Design" style="width:100%; height:200px; object-fit:cover;">
           <div style="padding:30px;">
             <h5 class="tp-feature-title" style="color:#000;">Branding & Design</h5>
-            <p style="color:#333; text-align:justify;">Crafting strong visual identities from logos and brochures to stage, stall, and exhibition designs that define a brand’s personality and voice.</p>
+            <p style="color:#000; text-align:justify;">Crafting strong visual identities from logos and brochures to stage, stall, and exhibition designs that define a brand’s personality and voice.</p>
           </div>
         </div>
       </div>
@@ -531,7 +673,7 @@
           <img src="assets/newimg/medium-shot-specialized-photographers-working-studio-min.jpg" alt="Media Planning" style="width:100%; height:200px; object-fit:cover;">
           <div style="padding:30px;">
             <h5 class="tp-feature-title" style="color:#000;">Media Planning & Buying</h5>
-            <p style="color:#333; text-align:left;">Television, radio, print, outdoor, and digital advertising  strategically planned for maximum brand visibility, awareness, and engagement.</p>
+            <p style="color:#000; text-align:left;">Television, radio, print, outdoor, and digital advertising  strategically planned for maximum brand visibility, awareness, and engagement.</p>
           </div>
         </div>
       </div>
@@ -542,7 +684,7 @@
           <img src="assets/newimg/positive-woman-recording-video-home-min.jpg" alt="PR & Influencer Marketing" style="width:100%; height:200px; object-fit:cover;">
           <div style="padding:30px;">
             <h5 class="tp-feature-title" style="color:#000;">PR & Influencer Marketing</h5>
-            <p style="color:#333; text-align:left;">Amplifying brand voice through media coverage, digital buzz, and influencer collaborations that connect authentically with your target audience.</p>
+            <p style="color:#000; text-align:left;">Amplifying brand voice through media coverage, digital buzz, and influencer collaborations that connect authentically with your target audience.</p>
           </div>
         </div>
       </div>

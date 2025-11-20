@@ -279,6 +279,22 @@
 
    <main>
 
+<style>.tp-slider-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.tp-slider-content {
+  position: relative;
+  z-index: 2;
+  color: #fff; /* white text */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+</style>
+
       <!-- slider area start -->
       <div class="tp-slider-area">
    <div class="tp-slider-wrapper p-relative">
@@ -331,11 +347,11 @@
                </div>
             </div>
 
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
                <div class="tp-slider-height p-relative">
                   <div class="tp-slider-bg" data-background="assets/newimg/your-third-image.jpg"></div>
                </div>
-            </div>
+            </div> -->
 
          </div>
       </div>
@@ -364,12 +380,12 @@
           <div class="tp-feature-content d-flex align-items-end justify-content-between">
             <div class="tp-feature-text">
               <h4 class="tp-feature-title" >Strategic Advertising</h4>
-              <p>Smart media plans across radio, cinema, outdoor, and digital to amplify your brand reach.</p>
+              <p style="color: 000;">Smart media plans across radio, cinema, outdoor, and digital to amplify your brand reach.</p>
             </div>
             <div class="tp-feature-arrow" >
               <a href="#" class="red"><i class="flaticon-up-right" style="color: #004dad;"></i></a>
             </div>
-          </div>
+          </div>  
         </div>
       </div>
 
@@ -388,7 +404,7 @@
           <div class="tp-feature-content d-flex align-items-end justify-content-between">
             <div class="tp-feature-text">
               <h4 class="tp-feature-title">Media Buying Expertise</h4>
-              <p>Cost-effective placements on top platforms — ensuring maximum visibility and value.</p>
+              <p >Cost-effective placements on top platforms — ensuring maximum visibility and value.</p>
             </div>
             <div class="tp-feature-arrow">
               <a href="#" class="red"><i class="flaticon-up-right" style="color: #004dad;"></i></a>
@@ -457,22 +473,26 @@
       <h4 class="tp-section-title">Delivering Ethical, Impactful & Measurable Marketing Solutions</h4>
     </div>
 
-    <div class="tp-about-text mb-25">
-      <p>At <strong>The Blu Sapphire Advertising</strong> and <strong>The Blu Sapphire Events & Entertainment</strong>, 
-        we specialize in transparent, creative, and performance-driven campaigns. 
-        From digital to outdoor, radio to cinema, and corporate to customized events — 
-        we bring brands closer to their audiences with innovative storytelling and flawless execution.</p>
-    </div>
+    <div class="tp-about-text mb-25" style="color:#000 !important;">
+  <p style="all:unset; display:block; color:#000 !important; font-size:16px; line-height:26px;">
+    At <strong style="color:#000 !important;">The Blu Sapphire Advertising</strong> 
+    and <strong style="color:#000 !important;">The Blu Sapphire Events & Entertainment</strong>, 
+    we specialize in transparent, creative, and performance-driven campaigns. 
+    From digital to outdoor, radio to cinema, and corporate to customized events — 
+    we bring brands closer to their audiences with innovative storytelling and flawless execution.
+  </p>
+</div>
+
 
     <div class="tp-about-item-box d-flex align-items-center justify-content-between mb-55" >
       <div class="tp-about-item active">
         <h6 class="tp-about-title-sm">Creative Advertising</h6>
-        <p>Radio, newspaper, cinema, outdoor hoardings, celebrity endorsements, and digital promotions — 
+        <p style="color: #000;">Radio, newspaper, cinema, outdoor hoardings, celebrity endorsements, and digital promotions — 
           all crafted to amplify your brand presence.</p>
       </div>
       <div class="tp-about-item">
         <h6 class="tp-about-title-sm">Memorable Events</h6>
-        <p>From corporate events and product launches to concerts and mall activations — 
+        <p style="color: #000;">From corporate events and product launches to concerts and mall activations — 
           we create experiences that connect and inspire.</p>
       </div>
     </div>
@@ -519,7 +539,7 @@
                   </div>
                   <div class="tp-solution-text">
                      <h4 class="tp-solution-title"><a href="advertising.html">Advertising Media</a></h4>
-                     <p>We plan, create, and execute campaigns across Radio, Newspaper, Cinema, Outdoor Hoardings, 
+                     <p style="color: #000;">We plan, create, and execute campaigns across Radio, Newspaper, Cinema, Outdoor Hoardings, 
                         Celebrity Endorsements, Digital Platforms, Metro Ads, and Apartment LED Screens.</p>
                   </div>
                   <div class="tp-solution-link">
@@ -536,7 +556,7 @@
                   </div>
                   <div class="tp-solution-text">
                      <h4 class="tp-solution-title"><a href="events.html">Events & Entertainment</a></h4>
-                     <p>From automobile launches and corporate events to mall activations and concerts — 
+                     <p style="color: #000;">From automobile launches and corporate events to mall activations and concerts — 
                         our team delivers creative, well-managed experiences that leave lasting impressions.</p>
                   </div>
                   <div class="tp-solution-link">
@@ -553,7 +573,7 @@
                   </div>
                   <div class="tp-solution-text">
                      <h4 class="tp-solution-title"><a href="execution.html">Campaign Execution</a></h4>
-                     <p>We manage every detail — from décor and LED walls to hosts, F&B, photographers, and drone coverage — 
+                     <p style="color: #000;">We manage every detail from décor and LED walls to hosts, F&B, photographers, and drone coverage 
                         ensuring a flawless on-ground experience.</p>
                   </div>
                   <div class="tp-solution-link">
@@ -570,7 +590,7 @@
                   </div>
                   <div class="tp-solution-text">
                      <h4 class="tp-solution-title"><a href="creative.html">Creative & Strategic Solutions</a></h4>
-                     <p>Our in-house experts craft engaging strategies and visuals that align with your brand vision 
+                     <p style="color: #000;">Our in-house experts craft engaging strategies and visuals that align with your brand vision 
                         and ensure measurable results across all platforms.</p>
                   </div>
                   <div class="tp-solution-link">
@@ -583,6 +603,147 @@
    </div>
 </div>
 
+
+
+      <!-- Pop-Up Form Button -->
+<button id="openPopupBtn" class="popup-btn"></button>
+
+<!-- Pop-Up Form Modal -->
+<!-- Auto Pop-Up Form Modal -->
+<div id="popupForm" class="popup-form-container">
+    <div class="popup-form-content">
+        <button id="closePopupBtn" class="close-popup-btn">&times;</button>
+        <h3 class="popup-title">Get in Touch</h3>
+
+        <form id="popupFormSubmit">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label>Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+<style>/* Basic pop-up styles */
+/* Popup Background */
+.popup-form-container {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+/* Popup Box */
+.popup-form-content {
+    background: #ffffff;
+    padding: 30px 40px;
+    width: 450px; /* Bigger Width */
+    border-radius: 10px;
+    position: relative;
+    animation: fadeDown 0.4s ease;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* X Close Button */
+.close-popup-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.popup-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #004dad;
+}
+
+/* Inputs */
+.popup-form-content input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #004dad;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #003c8f;
+}
+
+</style>
+
+<script>// Get references to the modal and buttons
+// Select elements
+const popupForm = document.getElementById('popupForm');
+const closePopupBtn = document.getElementById('closePopupBtn');
+const form = document.getElementById('popupFormSubmit');
+
+// Auto Open Popup When Page Loads
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        popupForm.style.display = "flex";
+    }, 700); // delay for smooth loading (optional)
+});
+
+// Close Button
+closePopupBtn.addEventListener('click', () => {
+    popupForm.style.display = "none";
+});
+
+// Form Submit → Reload Page
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // collect values if needed (you may send to backend)
+    const info = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        company: document.getElementById('company').value
+    };
+    console.log(info);
+
+    // Reload page after submit
+    window.location.reload();
+});
+
+</script>
 
       <!-- solution area end -->
 
@@ -756,6 +917,18 @@
   </div>
 </div>
 
+<style>
+   @media (max-width: 767px) {
+  .tp-subscribe-thumb {
+    display: none !important;   /* hides the whole container */
+    height: 0 !important;       /* removes any leftover height */
+    margin: 0 !important;       /* removes margins */
+    padding: 0 !important;      /* removes padding */
+  }
+}
+
+</style>
+
       <!-- subscribe area end -->
 
       <!-- testimonial area start -->
@@ -905,10 +1078,16 @@
           </div>
         </div>
         <div class="col-xl-5 col-lg-6">
-          <div class="tp-feature-3-top">
-            <p>At The Blu Sapphire, we combine creativity, ethics, and innovation to deliver impactful advertising 
-              and event solutions. Our mission is to help brands connect, engage, and grow through meaningful experiences.</p>
-          </div>
+  <div class="tp-feature-3-top" style="color:#000 !important;">
+    <p style="color:#000 !important; all:unset; color:#000 !important; display:block; font-size:16px; line-height:26px;">
+        At The Blu Sapphire, we combine creativity, ethics, and innovation to deliver impactful advertising 
+        and event solutions. Our mission is to help brands connect, engage, and grow through meaningful experiences.
+    </p>
+</div>
+
+
+</div>
+
         </div>
       </div>
     </div>
@@ -922,7 +1101,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Comprehensive Advertising</h5>
-              <p>From radio to digital — we create and execute impactful multi-channel campaigns.</p>
+              <p style="color: #000;">From radio to digital — we create and execute impactful multi-channel campaigns.</p>
             </div>
           </div>
 
@@ -932,7 +1111,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Creative Event Solutions</h5>
-              <p>Corporate launches, concerts, and mall activations — planned to perfection.</p>
+              <p style="color: #000;">Corporate launches, concerts, and mall activations — planned to perfection.</p>
             </div>
           </div>
 
@@ -942,7 +1121,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Seamless Execution</h5>
-              <p>From décor to drone shots — we deliver flawless, end-to-end event execution.</p>
+              <p style="color: #000;">From décor to drone shots — we deliver flawless, end-to-end event execution.</p>
             </div>
           </div>
 
@@ -952,7 +1131,7 @@
             </div>
             <div class="tp-feature-3-text">
               <h5 class="tp-feature-3-title">Trusted by Leading Brands</h5>
-              <p>12+ years of ethical, result-driven campaigns across industries.</p>
+              <p style="color: #000;">12+ years of ethical, result-driven campaigns across industries.</p>
             </div>
           </div>
         </div>
